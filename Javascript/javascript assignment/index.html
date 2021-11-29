@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Summit your application</title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <script type="text/Javascript" src="script/script.js"></script>
+    </head>
+    <body>
+        <div>
+            <form onsubmit="return validating()" action="#">
+                <h2>Personal Information</h2>
+                <p>Name as per ID proof<sup>*</sup></p>
+                <input type="text" id="name" placeholder="Name">
+                <label id="invaildname" style="color:red ;visibility: hidden;">Invalid</label><br>
+
+                <p>Father's Name<sup>*</sup></p>
+                <input type="text" id="fname" >
+                <label id="invaildfathername" style="color:red ;visibility: hidden;">Invalid</label><br>
+
+                <p>Email<sup>*</sup></p>
+                <input type="text" id="email" >
+                <label id="invaildemail" style="color:red ;visibility: hidden;">Invalid</label><br>
+
+                <p>Date of Birth<sup>*</sup></p>
+                <input type="text" id="dob" placeholder="DD-MM-YYYY">
+                <label id="invailddob" style="color:red ;visibility: hidden;">Invalid</label><br>
+
+                <p>Mobile No<sup>*</sup></p>
+                <input type="text" id="mobileno" >
+                <label id="invaildmobile" style="color:red ;visibility: hidden;">Invalid</label><br>
+
+                <p>Current Address<sup>*</sup></p>
+                <input type="text" id="address1" placeholder="Address line 1" >
+                <label id="invaildaddress1" style="color:red ;visibility: hidden;">Invalid</label><br>
+                <!-- <label id="inva" style="color:red ;visibility: hidden;">Invalid Entry</label><br> -->
+                <input type="text" id="address1" placeholder="Address line 2" >
+                <input type="text" id="city1" placeholder="city" >
+                <label id="invaildcity1" style="color:red ;visibility: hidden;">Invalid</label><br>
+                <select name="state" id="">
+                    <option value="Tamilnadu">Tamilnadu</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Karnadaka">Karnadaka</option>
+                    <option value="Andrapradesh">Andrapradesh</option>
+                </select>
+                <input type="text" id="zip1" placeholder="Zip code" ><br>
+                <label id="invaildzip1" style="color:red ;visibility: hidden;">Invalid</label><br>
+                <input type="checkbox" id="isper">same as current address.<br>
+
+                <input type="text" id="address2" placeholder="Address line 1" >
+                <label id="invaildaddress2" style="color:red ;visibility: hidden;">Invalid</label><br>
+                <input type="text" id="address1" placeholder="Address line 2" >
+                <input type="text" id="city2" placeholder="city" >
+                <label id="invaildcity2" style="color:red ;visibility: hidden;">Invalid</label><br>
+                <select name="state" id="">
+                    <option value="Tamilnadu">Tamilnadu</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Karnadaka">Karnadaka</option>
+                    <option value="Andrapradesh">Andrapradesh</option>
+                </select>
+                <input type="text" id="zip2" placeholder="Zip code" >
+                <label id="invaildzip2" style="color:red ;visibility: hidden;">Invalid</label><br>
+
+                <p>upload profile photo<sup>*</sup>(JPG/PNG format only)<br>
+                Please upload a photo of yourself. your face should be clearly visible. make sure the image size dose not exit 500KB.</p><br>
+                <input type="file" id="file" value="UPLOAD PHOTO"><br><br>  
+                <label id="invaildfile" style="color:red ;visibility: hidden;">Invalid</label><br>         
+                <button onclick="validating()" type="submit">Summit</button>      
+            </form>
+        </div>     
+    </body>
+    
+</html>
